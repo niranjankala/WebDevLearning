@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETMVC", "WebDev.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETMVC.Tests", "WebDev.AspNETMVC.Tests\WebDev.AspNETMVC.Tests.csproj", "{ACD2EA56-FC87-4EC3-BAFA-53A0FD78C5C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETCore", "WebDev.AspNETCore\WebDev.AspNETCore.csproj", "{FF993457-CB38-4A4F-A9C2-A44105E8B231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDev.AspNETCore", "WebDev.AspNETCore\WebDev.AspNETCore.csproj", "{FF993457-CB38-4A4F-A9C2-A44105E8B231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETCoreNoAuth", "WebDev.AspNETCoreNoAuth\WebDev.AspNETCoreNoAuth.csproj", "{017AE606-0E65-4F55-B725-C216CAC21D4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDev.AspNETCoreNoAuth", "WebDev.AspNETCoreNoAuth\WebDev.AspNETCoreNoAuth.csproj", "{017AE606-0E65-4F55-B725-C216CAC21D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
