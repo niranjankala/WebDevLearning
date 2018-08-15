@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <div id="activeUserCount"></div>
+    <script type="text/javascript">
+        $(function () {
+            var cn = $.hubConnection();
+            
+            var hub = cn.createHubProxy('activeConnectionCounter');  
+            hub.on('onAtiveConnectionChanged', function (i) {
+                $('#activeUserCount').text(i);
+            });
+            cn.start(function () {
+                //Invoke Server method name
+                hub.invoke('NotifyNewUser');
+            });
+        });
+    </script>
+</body>
+</html>

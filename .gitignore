@@ -65,3 +65,15 @@
 /WebDev/WebDev.AspNETMVC/obj/Debug
 /WebDev/WebDev.AspNETMVC.Tests/bin/Debug
 /WebDev/WebDev.AspNETMVC.Tests/obj/Debug
+/WebDev/packages/Newtonsoft.Json.11.0.1
+/WebDev/packages/Microsoft.Net.Compilers.2.6.1
+/WebDev/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8
+/WebDev/packages/Microsoft.AspNet.WebPages.3.2.4
+/WebDev/packages/Microsoft.AspNet.SignalR.SystemWeb.2.2.2
+/WebDev/packages/Microsoft.AspNet.SignalR.JS.2.2.2
+/WebDev/packages/Microsoft.AspNet.SignalR.Core.2.2.2
+/WebDev/packages/Microsoft.AspNet.SignalR.2.2.2
+/WebDev/packages/Microsoft.AspNet.Razor.3.2.4
+/WebDev/packages/Microsoft.AspNet.Mvc.5.2.4
+/WebDev/WebDev.AspNetReact/bin
+/WebDev/WebDev.AspNetReact/obj/Debug
