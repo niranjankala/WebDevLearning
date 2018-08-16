@@ -9,13 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETMVC", "WebDev.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETMVC.Tests", "WebDev.AspNETMVC.Tests\WebDev.AspNETMVC.Tests.csproj", "{ACD2EA56-FC87-4EC3-BAFA-53A0FD78C5C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDev.AspNETCore", "WebDev.AspNETCore\WebDev.AspNETCore.csproj", "{FF993457-CB38-4A4F-A9C2-A44105E8B231}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETCore", "WebDev.AspNETCore\WebDev.AspNETCore.csproj", "{FF993457-CB38-4A4F-A9C2-A44105E8B231}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDev.AspNETCoreNoAuth", "WebDev.AspNETCoreNoAuth\WebDev.AspNETCoreNoAuth.csproj", "{017AE606-0E65-4F55-B725-C216CAC21D4A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "React", "React", "{D7E7A081-1BB1-444E-BA94-81D45C2826A2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNetReact", "WebDev.AspNetReact\WebDev.AspNetReact.csproj", "{528E25D9-3902-4E32-8E24-647ABFF6B70D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNETCoreNoAuth", "WebDev.AspNETCoreNoAuth\WebDev.AspNETCoreNoAuth.csproj", "{017AE606-0E65-4F55-B725-C216CAC21D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,16 +39,9 @@ Global
 		{017AE606-0E65-4F55-B725-C216CAC21D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{017AE606-0E65-4F55-B725-C216CAC21D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{017AE606-0E65-4F55-B725-C216CAC21D4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{528E25D9-3902-4E32-8E24-647ABFF6B70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{528E25D9-3902-4E32-8E24-647ABFF6B70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{528E25D9-3902-4E32-8E24-647ABFF6B70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{528E25D9-3902-4E32-8E24-647ABFF6B70D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{528E25D9-3902-4E32-8E24-647ABFF6B70D} = {D7E7A081-1BB1-444E-BA94-81D45C2826A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4913E4F3-A5E0-4EEE-A7F7-FF0DEFA14116}
