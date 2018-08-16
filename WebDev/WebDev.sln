@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDev.AspNETCore", "WebDev
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDev.AspNETCoreNoAuth", "WebDev.AspNETCoreNoAuth\WebDev.AspNETCoreNoAuth.csproj", "{017AE606-0E65-4F55-B725-C216CAC21D4A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR", "SignalR", "{B46B7570-9247-45CF-8596-7BFD0FEAF713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNetReact", "WebDev.AspNetReact\WebDev.AspNetReact.csproj", "{E0AC7595-FCA6-4F23-93CF-CF535E436A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +43,16 @@ Global
 		{017AE606-0E65-4F55-B725-C216CAC21D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{017AE606-0E65-4F55-B725-C216CAC21D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{017AE606-0E65-4F55-B725-C216CAC21D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0AC7595-FCA6-4F23-93CF-CF535E436A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0AC7595-FCA6-4F23-93CF-CF535E436A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0AC7595-FCA6-4F23-93CF-CF535E436A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0AC7595-FCA6-4F23-93CF-CF535E436A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E0AC7595-FCA6-4F23-93CF-CF535E436A69} = {B46B7570-9247-45CF-8596-7BFD0FEAF713}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4913E4F3-A5E0-4EEE-A7F7-FF0DEFA14116}
