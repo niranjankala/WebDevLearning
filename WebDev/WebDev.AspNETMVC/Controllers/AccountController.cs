@@ -137,8 +137,9 @@ namespace WebDev.AspNETMVC.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
-        public ActionResult Register()
+        public ActionResult Register(string returnUrl= null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
 
