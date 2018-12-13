@@ -80,3 +80,6 @@
 /WebDev/WebDev.AspNETMVC.Tests/obj/Release
 /WebDev/WebDev.AspNetReact/obj/Release
 *.user
+/WebDev/bin/Debug
+/WebDev/obj
+/WebDev/WebDev.AspNETMVC/obj/Docker

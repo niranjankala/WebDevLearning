@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webdev.aspnetmvc:
+    image: ${DOCKER_REGISTRY-}webdevaspnetmvc
+    build:
+      context: .\WebDev.AspNETMVC
+      dockerfile: Dockerfile
