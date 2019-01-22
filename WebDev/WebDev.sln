@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28315.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNET", "WebDev.AspNET\WebDev.AspNET.csproj", "{22E2ABA1-A0B9-4588-B174-1ED090A2A2EC}"
 EndProject
@@ -18,6 +18,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.AspNetReact", "WebDev.AspNetReact\WebDev.AspNetReact.csproj", "{528E25D9-3902-4E32-8E24-647ABFF6B70D}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{92BD63E1-2CE4-4D38-A1B2-2A88D1CB2DAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Containerized", "Containerized", "{A1C57798-43C5-4052-B858-212786930520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDev.Containerized.MVCWeb", "WebDev.Containerized.MVCWeb\WebDev.Containerized.MVCWeb.csproj", "{CA108AE7-DBF9-4025-B01A-323E0C288176}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,12 +57,17 @@ Global
 		{92BD63E1-2CE4-4D38-A1B2-2A88D1CB2DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92BD63E1-2CE4-4D38-A1B2-2A88D1CB2DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92BD63E1-2CE4-4D38-A1B2-2A88D1CB2DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA108AE7-DBF9-4025-B01A-323E0C288176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA108AE7-DBF9-4025-B01A-323E0C288176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA108AE7-DBF9-4025-B01A-323E0C288176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA108AE7-DBF9-4025-B01A-323E0C288176}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{528E25D9-3902-4E32-8E24-647ABFF6B70D} = {B46B7570-9247-45CF-8596-7BFD0FEAF713}
+		{CA108AE7-DBF9-4025-B01A-323E0C288176} = {A1C57798-43C5-4052-B858-212786930520}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4913E4F3-A5E0-4EEE-A7F7-FF0DEFA14116}

@@ -6,3 +6,7 @@ services:
     build:
       context: .\WebDev.AspNETMVC
       dockerfile: Dockerfile
+	  depends_on:
+	  - sql
+  sql:
+    image:microsoft/mssql-server-windows

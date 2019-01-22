@@ -83,3 +83,6 @@
 /WebDev/bin/Debug
 /WebDev/obj
 /WebDev/WebDev.AspNETMVC/obj/Docker
+/WebDev/WebDev.Containerized.MVCWeb/bin/Debug/netcoreapp2.2
+/WebDev/WebDev.Containerized.MVCWeb/obj/Debug/netcoreapp2.2
+/WebDev/WebDev.Containerized.MVCWeb/obj
