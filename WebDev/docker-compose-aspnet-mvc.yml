@@ -2,17 +2,14 @@ version: '3.4'
 
 services:
   webdev.aspnetmvc:
-    #Uncomment Line #6 to build image for 
-    #image: webdevaspnetcore
     image: ${DOCKER_REGISTRY-}webdevaspnetmvc
-    
     build:
       context: .\WebDev.AspNETMVC
       dockerfile: Dockerfile
     depends_on:
       - sql
   sql:
-    image: microsoft/mssql-server-windows-developer
+    image: microsoft/mssql-server-windows
     environment:
-    - "ACCEPT_EULA='Y'"
+    - "ACCEPT_eula='Y'"
     - "sa_password=Microsoft#1234"
