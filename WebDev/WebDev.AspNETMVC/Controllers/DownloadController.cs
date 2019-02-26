@@ -69,5 +69,25 @@ namespace WebDev.AspNETMVC.Controllers
             //Response.End();
 
         }
+
+        public ActionResult DownloadDocument()
+        {
+            string base64PDF = string.Empty;
+            string documentUrl = Server.MapPath("~/Files/Docs/Architecting Modern Web Applications with ASP.NET Core and Azure.pdf");
+            if (!string.IsNullOrWhiteSpace(documentUrl) && System.IO.File.Exists(documentUrl))
+            {
+                var mimeType = "application/pdf";
+                var fileContent = System.IO.File.ReadAllBytes(documentUrl);
+
+                base64PDF = System.Convert.ToBase64String(fileContent, 0, fileContent.Length);
+
+                //MemoryStream pdfStream = new MemoryStream();
+                //pdfStream.Write(fileContent, 0, fileContent.Length);
+                //pdfStream.Position = 0;
+                //return new FileStreamResult(pdfStream, mimeType);
+            }
+            ViewBag.DocumentContent = base64PDF;
+            return View();
+        }
     }
 }

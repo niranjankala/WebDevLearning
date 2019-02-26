@@ -250,6 +250,7 @@
     <None Include=".dockerignore">
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
+    <Content Include="Files\Docs\Architecting Modern Web Applications with ASP.NET Core and Azure.pdf" />
     <None Include="Properties\PublishProfiles\registry.hub.docker.com_niranjankala.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -270,7 +271,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -316,6 +319,7 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Download\DownloadInstallerX64.cshtml" />
+    <Content Include="Views\Download\DownloadDocument.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
