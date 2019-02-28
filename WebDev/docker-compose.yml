@@ -14,5 +14,5 @@ services:
   sql:
     image: microsoft/mssql-server-windows-developer
     environment:
-    - "ACCEPT_EULA=Y"
+    - "ACCEPT_EULA='Y'"
     - "sa_password=Microsoft#1234"

@@ -87,3 +87,8 @@
 /WebDev/WebDev.Containerized.MVCWeb/obj/Debug/netcoreapp2.2
 /WebDev/WebDev.Containerized.MVCWeb/obj
 /WebDev/WebDev.Containerized.MVCWeb/bin/Debug/netcoreapp2.1
+/WebDev/WebDev.Common/obj/Debug
+/WebDev/packages/System.Runtime.Serialization.Primitives.4.3.0
+/WebDev/packages/System.Reflection.TypeExtensions.4.1.0
+/WebDev/packages/NodaTime.2.0.2
+/WebDev/packages/Ical.Net.4.1.10
