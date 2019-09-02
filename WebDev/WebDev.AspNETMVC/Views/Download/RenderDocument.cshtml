@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Render Document";
+}
+
+<h2>DownloadDocument</h2>
+<div>
+    <object data="data:application/pdf;base64, @ViewBag.DocumentContent" type="application/pdf" width="160px">
+        <embed src="data:application/pdf;base64, @ViewBag.DocumentContent" type="application/pdf" />
+    </object>
+    
+</div>
+
