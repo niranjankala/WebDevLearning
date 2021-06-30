@@ -1,7 +1,81 @@
-﻿
+﻿@model WebDev.AspNETMVC.Models.UploadViewModel
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
+<script src="https://github.com/RonnieSan/uploadify/blob/master/jquery.uploadifive.js" type="text/javascript" />
+<link href="https://github.com/RonnieSan/uploadify/blob/master/uploadifive.css" />
 
+
+<script type="text/javascript">
+    //debugger;
+   @*// var tmId = '@Model.TeamId';*@
+    var membertypeURL = '@Url.Content("~/QualityCircle/GetMemberTypeList/")';    
+    $(document).ready(function () {
+
+        $("#imgUploader").fileUpload({
+            'uploader': '@Url.Content("~/Scripts/uploader.swf")',
+            'cancelImg': '@Url.Content("~/Images/cancel.png")',
+            'buttonText': 'Upload Image',
+            'script': '@Url.Content("~/Upload/UploadImage/")',
+            'folder': '/upload/TeamAvatars/',
+            'fileDesc': 'Image Files',
+            'fileExt': '*.jpg;*.jpeg;*.gif;*.png',
+            'multi': false,
+            'auto': true,
+            'onSelect': function (event, ID, fileObj) {
+                $.blockUI({ message: '<h2><img src="@Url.Content("~/Content/Images/loader.gif")" /><br/> Uploading Image...</h2>' });
+            }
+            , 'onComplete': function (event, ID, fileObj, response) {
+               // debugger;
+                UnBlockUI();
+                if (response != "") {
+                    $("#imgUploadDiv").addClass("loading");
+                    var htmlString = "<img src=\"" + response + "\" alt=\"" + fileObj.name + "\" height=\"" + "110" + "\" width=\"" + "110" + "\" />";
+                    $("#ImageCont").html(htmlString);
+                    $("#ImageDataURL").val(response);
+                    $("#editImgUpload").removeClass("loading");
+                }
+            }
+        });
+    });
+</script>
+<form id="formQCM">
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        <div style="display: none;">
+            <div style="margin-top: 0.5em;">
+                @Html.EditorFor(model => model.ImageDataURL)
+                @Html.ValidationMessageFor(model => model.ImageDataURL)
+            </div>
+        </div>
+        <div style="font-size: 12px; font-weight: normal; color: Red; width: auto; float:right">
+            @Html.Raw("* - Required fields")
+        </div>
+        <br />
+        <div class="form-group">
+            <div class="ImageCont" id="ImageCont">
+                @if (@Model != null)
+                {
+                    if (@Model.ImageDataURL != null)
+                    {
+                        <img src="@Model.ImageDataURL" width="110" height="110" alt="" /><span style="color:red"> * </span>
+                    }
+                    else
+                    {
+                        <img src="@Url.Content("~/Content/Images/Anonymsuser.jpg")" width="110" height="110" alt="" /><span style="color:red"> * </span>
+                    }
+                }
+                else
+                {
+                    <img src="@Url.Content("~/Content/Images/Anonymsuser.jpg")" width="110" height="110" alt="" />
+                }
+            </div>
+            <div class="TextPhoto">
+                <div id="imgUploader">
+                </div>
+            </div><span id="msgphoto" style="color:red"></span>
+        </div>
+    </div>
+</form>

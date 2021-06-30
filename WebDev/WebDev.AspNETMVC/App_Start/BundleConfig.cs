@@ -11,6 +11,9 @@ namespace WebDev.AspNETMVC
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquery-blockUI").Include(
+                        "~/Scripts/jquery.blockUI/jquery.blockUI.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 

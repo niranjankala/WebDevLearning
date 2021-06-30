@@ -9,6 +9,52 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $(document).ajaxStart(
+            $.blockUI(
+                {
+                    message: '<h2><img src="@Url.Content("~/Content/Images/loader.gif")" /><br/> Processing...</h2>'
+                }
+            )
+        )
+            .ajaxStop($.unblockUI);
+
+
+        $.ajaxSetup({
+            error: function (x, e) {
+                if (x.status == 0) {
+                    ShowAlert('You are offline!!\n Please Check Your Network.', 'Alert Dialog');
+                } else if (x.status == 404) {
+                    ShowAlert('Requested URL not found.', 'Alert Dialog');
+                } else if (x.status == 500) {
+                    ShowAlert('Internel Server Error.', 'Alert Dialog');
+                } else if (e == 'parsererror') {
+                    ShowAlert('Error.\nParsing JSON Request failed.', 'Alert Dialog');
+                } else if (e == 'timeout') {
+                    ShowAlert('Request Time out.', 'Alert Dialog');
+                } else {
+                    ShowAlert('Unknow Error.\n' + x.responseText, '');
+                }
+            }
+        });
+
+
+
+    });
+
+                function BlockUI() {
+            $.blockUI({ message: '<h2><img src="@Url.Content("~/Content/Images/loader.gif")" /><br/> Processing...</h2>' });
+        }
+
+        function UnBlockUI() {
+            $.unblockUI();
+        }
+
+</script>
+
+
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -40,6 +86,7 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery-blockUI")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

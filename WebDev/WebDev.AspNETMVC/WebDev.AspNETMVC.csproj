@@ -206,6 +206,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\SupportViewModels.cs" />
+    <Compile Include="Models\UploadViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -216,6 +217,9 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Anonymsuser.jpg" />
+    <Content Include="Content\Images\cancel.png" />
+    <Content Include="Content\Images\loader.gif" />
     <Content Include="Downloads\Installer\x64\help.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -252,6 +256,7 @@
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
     <Content Include="Files\Docs\Architecting Modern Web Applications with ASP.NET Core and Azure.pdf" />
+    <Content Include="libman.json" />
     <None Include="Properties\PublishProfiles\registry.hub.docker.com_niranjankala.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -259,6 +264,8 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.blockUI\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.blockUI\jquery.blockUI.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -324,6 +331,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\jquery.uploadify\" />
     <Folder Include="Views\Events\" />
   </ItemGroup>
   <ItemGroup>

@@ -41,7 +41,9 @@
       <HintPath>..\packages\NodaTime.2.0.2\lib\net45\NodaTime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Reflection.TypeExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Reflection.TypeExtensions.4.1.0\lib\net46\System.Reflection.TypeExtensions.dll</HintPath>
     </Reference>
@@ -76,7 +78,12 @@
   <ItemGroup>
     <Compile Include="DataObjects\CalendarEvent.cs" />
     <Compile Include="DataObjects\ICSCalendar.cs" />
+    <Compile Include="DirectoryPaths.cs" />
+    <Compile Include="Enums\UploadAvatarType.cs" />
+    <Compile Include="FileServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Randoms.cs" />
+    <Compile Include="SiteConfig.cs" />
     <Compile Include="Utils\CalendarUtils.cs" />
   </ItemGroup>
   <ItemGroup>
