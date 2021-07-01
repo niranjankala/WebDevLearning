@@ -43,5 +43,9 @@ namespace WebDev.AspNETMVC.Controllers
             }
         }
 
+        public ActionResult Uploadifive()
+        {
+            return View(new UploadViewModel() { });
+        }
     }
 }

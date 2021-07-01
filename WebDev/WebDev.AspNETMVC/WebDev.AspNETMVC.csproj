@@ -328,6 +328,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Download\DownloadInstallerX64.cshtml" />
     <Content Include="Views\Download\DownloadDocument.cshtml" />
+    <Content Include="Views\Upload\Uploadifive.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
